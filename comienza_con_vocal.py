@@ -8,11 +8,11 @@ Determinar si una palabra comienza con una vocal
 palabra = input("Introduce una  palabra: ")
 
 # Proceso
-primera_letra = palabra[0].lower()
-vocales = "aeiou"
+vocales = "aeiouáéíóúüAEIOUÁÉÍÓÚÜ"
+if palabra and palabra [0] in vocales:
+    mensaje = f"'{palabra}' comienza con una vocal"
+else:
+    mensaje = f"'{palabra}' no comienza con una vocal"
 
 # Salidas
-if primera_letra in vocales:
-    print ("Comienza con una vocal ")
-else:
-    print("No comienza con una vocal")
+print(mensaje)
